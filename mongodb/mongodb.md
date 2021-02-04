@@ -9,3 +9,6 @@ query:
         {"Users":[{"UserId":101,"UserName":"Vinay"},{"UserId":102,"UserName":"vinaybabu"},
         {"UserId":103,"UserName":"Vinay"},{"UserId":104,"UserName":"vinaybabu"}]}
     );
+
+    to get latest record:
+    db.mongo_table.find().sort({KEY:-1}).limit(1).pretty();
